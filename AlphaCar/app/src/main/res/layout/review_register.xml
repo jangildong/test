@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--2. 1에서 만든 DTO 에서 내가 보여주고 싶은 데이터를 골라 xml 파일을 만든다.-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/reviewComapany"
+                    android:layout_width="350dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="리뷰작성"
+                    android:textSize="36dp" />
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_backicon_selector"
+                    android:layout_gravity="center_vertical"/>
+
+                <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_backicon"
+                    android:layout_gravity="left">
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="60"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/descRatingBar"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="별점"
+                    android:textSize="24dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="245dp"
+                    android:layout_height="40dp"
+                    android:numStars="5"
+                    android:stepSize="1.0"/>
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/tvReview"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="내용"
+                android:textSize="24sp" />-->
+
+            <EditText
+                android:id="@+id/editTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="2.5dp"
+                android:layout_gravity="center_vertical"
+                android:hint="제목을 입력하세요(20자 이내)"
+                android:background="@drawable/border"
+                android:textSize="24sp"
+                android:maxLength="20"/>
+
+
+            <EditText
+                android:id="@+id/editReview"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:paddingLeft="2.5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="24sp"
+                android:maxLength="50"
+                android:hint="리뷰 내용을 입력하세요(50자 이내)"/>
+
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="사진등록"
+                android:textSize="24sp" />
+
+            <!--ImageView to preview the selected image-->
+            <ImageView
+                android:id="@+id/addPhoto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/photo"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/add_photo"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/addPhoto"
+                android:background="@drawable/btn_selector"
+                android:text="등록하기"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

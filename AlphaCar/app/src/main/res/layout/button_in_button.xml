@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/draw_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    android:background="#00000000"
+    >
+    <!-- 메인화면-->
+
+
+    <!-- 메인화면-->
+
+
+                <FrameLayout
+                    android:id="@+id/contain_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_reg_new"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="140dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/btn_shape"
+                        android:text="업장등록"
+                        android:textColor="@color/white"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_reg_up"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="75dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/btn_shape"
+                        android:text="업장수정"
+                        android:textColor="@color/white"
+                        />
+
+
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/btn_shape"
+                        android:text="X"
+                        android:textColor="@color/white"
+                        />
+
+
+
+                </FrameLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/nav_background">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="Navigation header"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:src="@drawable/guest"/>
+
+    <TextView
+        android:id="@+id/loginID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="center"
+        android:text="GUEST"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/loginStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="회원가입을 해주세요"/>
+
+
+</LinearLayout>

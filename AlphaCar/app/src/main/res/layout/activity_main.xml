@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/draw_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <!-- 메인화면-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        app:lottie_fileName="test8.json"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- 메인화면-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="90"
+                >
+
+                <FrameLayout
+                    android:id="@+id/contain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                    >
+
+
+                 <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_weight="60"
+                    android:layout_marginTop="50dp">
+
+                     <androidx.viewpager.widget.PagerTabStrip
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/sky"
+                         android:paddingTop="5dp"
+                         android:paddingBottom="5dp"
+                         />
+
+                 </androidx.viewpager.widget.ViewPager>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="400"
+                        android:layout_gravity="bottom"
+                        >
+                        <ImageView
+                            android:id="@+id/btn_kakao_ch"
+                            android:layout_width="match_parent"
+                            android:layout_height="68dp"
+                            android:background="@drawable/kakao_channel"
+                            android:layout_weight="100"
+                            android:text="채널 연결"
+                            />
+                        <ImageView
+                            android:id="@+id/btn_kakao_chat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/kakao_chat"
+                            android:layout_weight="140"
+                            android:text="채팅 연결"
+
+                            />
+
+
+
+                        <Button
+                            android:id="@+id/btn_cp_reg"
+                            android:layout_width="match_parent"
+                            android:layout_height="68dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="160"
+                            android:background="@drawable/btn_shape"
+                            android:text="업장관리"
+                            android:textColor="@color/white"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+            </LinearLayout>
+
+
+
+
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navi"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:background="@color/sky"
+                app:itemBackground="@color/sky"
+                app:itemIconTint="@drawable/item_color"
+                app:itemTextColor="@drawable/item_color"
+                app:menu="@menu/bottom_menu"
+                app:labelVisibilityMode="labeled"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/main_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

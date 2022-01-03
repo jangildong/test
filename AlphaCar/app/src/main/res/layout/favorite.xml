@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp"
+            app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/fav_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/fabt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:text="Button"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/fav_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_line"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/faImg"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="left"
+                        android:padding="5dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/faTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="업체명"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/fadel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+
+                    android:padding="10dp"
+                    app:srcCompat="@android:drawable/presence_offline" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

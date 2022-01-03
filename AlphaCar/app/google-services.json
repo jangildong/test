@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "596395546364",
+    "firebase_url": "https://alphacar-60df2-default-rtdb.firebaseio.com",
+    "project_id": "alphacar-60df2",
+    "storage_bucket": "alphacar-60df2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596395546364:android:e670c1ea8f93e10e736979",
+        "android_client_info": {
+          "package_name": "com.example.alphacar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596395546364-8gilf1h893fas7id9sp880q22pkpj0bn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alphacar",
+            "certificate_hash": "6d9a6f043565a7fcb2b26eb9831aeb9467906a77"
+          }
+        },
+        {
+          "client_id": "596395546364-8962tbgqkajn2mra5v0u9egth9sot0dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlutmPi3bI2r-ZvXgfDzhsN-T3YZb77qo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596395546364-8962tbgqkajn2mra5v0u9egth9sot0dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

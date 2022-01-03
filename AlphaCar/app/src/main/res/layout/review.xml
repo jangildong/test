@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--2. 1에서 만든 DTO 에서 내가 보여주고 싶은 데이터를 골라 xml 파일을 만든다.-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/reviewHeader"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="리뷰"
+            android:textSize="36dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_backicon"
+            android:layout_gravity="center_vertical"/>
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_backicon"
+            android:layout_gravity="left">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>-->
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/profileImg"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userID"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="사용자아이디"
+                android:textSize="12dp" />
+
+            <RatingBar
+                android:id="@+id/showRating"
+                android:layout_width="80dp"
+                android:layout_height="19dp"
+                android:numStars="5"
+                android:stepSize="1.0"
+                style="?android:attr/ratingBarStyleSmall"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#9C9C9C"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewTitle"
+        android:layout_marginLeft="15dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9C9C9C"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewContent"
+        android:layout_marginLeft="15dp"
+        android:text="content"
+        android:textSize="18dp"
+        />
+
+    <ImageView
+        android:id="@+id/reviewPhoto"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:id="@+id/forPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
+
+
